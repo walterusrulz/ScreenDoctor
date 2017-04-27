@@ -1,0 +1,26 @@
+﻿<Window x:Class="ScreenDoctor.CitasNuevas"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ScreenDoctor"
+        mc:Ignorable="d"
+        Title="Citas nuevas" Height="270" Width="350">
+    <Grid>
+        <DatePicker Name="date" VerticalAlignment="Top" Margin="187,36,10,0" Height="25"/>
+        <Label Content="Fecha cita nueva:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,36,0,0" Width="160"/>
+        <Label Content="Tipo cita:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,78,0,0" Width="160"/>
+        <ComboBox Name="app" VerticalAlignment="Top" Margin="187,78,10,0"/>
+        <GroupBox Header="Preferencia" Margin="10,109,10,39">
+            <StackPanel Margin="0,0,0,0">
+                <RadioButton Name="rbtUrg" Content="Urgente" Margin="0,05,0,0"/>
+                <RadioButton Name="rbtPre" Content="Preferente" Margin="0,10,0,0"/>
+            </StackPanel>
+
+        </GroupBox>
+        <Button Name="acc" Content="Aceptar" HorizontalAlignment="Left" Width="75" Margin="10,0,0,10" Click="acc_Click" Height="20" VerticalAlignment="Bottom"/>
+        <Button Name="clean" Content="Limpiar" Margin="0,0,10,10" Height="20" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="75" Click="clean_Click"/>
+
+
+    </Grid>
+</Window>
